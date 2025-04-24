@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.about_box {
+  display: flex;
+  padding-top: 200px;
+  justify-content: space-between;
+}
+
+.img_bg_about {
+  width: 300px;
+  height: 300px;
+  background: #52b947;
+  display: flex;
+  position: relative;
+  left: 330px;
+  top: -270px;
+  z-index: -20;
+}
+
+.about_right_img {
+  perspective: 1500px;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  z-index: 20;
+}
+
+.about_right_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+  position: relative;
+  z-index: 20;
+}
+
+.constructions_box1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.big_div_constructions {
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+
+.constructions_box1 span {
+  font-size: 28px;
+  margin-top: -15px;
+  color: #52b947;
+  border: 2px solid #52b947;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.constructions_title p {
+  margin-top: -0px;
+}
+
+.aboutcom_title h1 {
+  color: #52b947;
+}
+
+.about_left_info {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-family: 18px;
+}
+
+.constructions_title p {
+  font-family: "Outfit", sans-serif;
+}
+
+.constructions_box1:hover span {
+  background: #52b947;
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.aboutcom_title p {
+
+}

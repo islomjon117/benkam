@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+.services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/services/img4.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.services_title {
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.services_title h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.services_title h1 {
+  font-size: 54px;
+  width: 40%;
+  text-align: center;
+  margin-top: 15px;
+  color: #52b947;
+  font-family: "Outfit", sans-serif;
+  font-weight:600;
+}
+
+.services_boxs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.services_box {
+  position: relative;
+  top: -100px;
+  width: 20%;
+  height: 270px;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.services_box:hover {
+  transform: translateY(-40px);
+  background-color: #52b947;
+}
+
+.services_box img {
+  filter: sepia(100%) saturate(500%) hue-rotate(90deg);
+}
+
+.services_box span {
+  font-size: 74px;
+  display: flex;
+  justify-content: center;
+  color: #52b947;
+  margin-top: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.services_box:hover span {
+  color: white;
+}
+
+.services_box h2 {
+  position: relative;
+  top: 20px;
+  color: #1b1b1b;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  width: 30%;
+  margin: auto;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+.services_box:hover h2 {
+  color: white;
+}
+
+.box_short_info {
+  text-align: center;
+  margin-top: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.services_box:hover .box_short_info {
+  color: white;
+}
+
+.services_box a {
+  color: #000;
+}
+
+.box_short_info p{
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.services_title p {
+  margin-top: 15px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}

@@ -1,0 +1,34 @@
+.contact {
+  padding-top: 200px;
+}
+
+.phone_email_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location_box,
+.email_box,
+.phone_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.location_icon,
+.phone_icon,
+.email_icon{
+    width: 70px;
+    height: 70px;
+    background: #52b947;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    align-items: center;
+}
+
+.phone_icon span{
+    margin-top: 10px;
+}

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.quastions_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.quastions2{
+  
+  background-image: url('../../assets/quastion_bg/img1.png');
+  width: 100%;
+  height: 400px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.quastions_box{
+  position: relative;
+  top: -200px;
+}
+
+.quastions_left {
+  width: 50%;
+  height: 500px;
+  background: #1b1b1b;
+  box-shadow: -4px 6px 10px 0px rgba(34, 60, 80, 0.2);
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
+.quastions_left h1 {
+  color: #52b947;
+  width: 40%;
+  margin: auto;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  margin-top: 50px;
+}
+
+.quastions_right {
+  width: 50%;
+  height: 500px;
+  background: #fff;
+  box-shadow: 5px 5px 14px -5px rgba(34, 60, 80, 0.42);
+}
+
+.info_text_quote {
+  width: 35%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.inputs_box1 input {
+  width: 35%;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 20px;
+  border: 1px solid #52b947;
+  outline: none;
+}
+
+.inputs_box1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs_box1 select {
+  height: 50px;
+  margin-top: 20px;
+  width: 35%;
+  border: 1px solid #52b947;
+  padding-left: 20px;
+  outline: none;
+  color: #757575;
+  
+}
+
+.quastions_right textarea {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 73%;
+  height: 140px;
+  outline: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #52b947;
+  border-radius: 5px;
+}
+
+.form_button {
+  width: 73%;
+  display: flex;
+  margin: auto;
+  justify-content: end;
+}
+
+.form_button button{
+ width: 24%;
+ height: 50px;
+ margin-top: 30px;
+ border: none;
+ background: #52b947;
+ color: white;
+ text-transform: uppercase;
+ cursor: pointer;
+}
+
+.quastions_right form{
+    margin-top: 50px;
+}
+
+.subject_input{
+  width: 73% !important;
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.resualts {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/services/img4.png");
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resualts_title {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.resualts_title h1 {
+  font-size: 54px;
+  margin-top: 20px;
+  color: #52b947;
+}
+
+.resualts_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.resualts_box1 {
+  width: 270px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.resualts_box1 h1 {
+  color: #52b947;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  margin-top: 20px;
+  transition: .3s ease-in-out;
+}
+
+.resualts_box1 p {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  transition: .3s ease-in-out;
+}
+
+.resualts_box1 hr {
+  width: 85%;
+  margin: auto;
+  background-color: #353636;
+  border: none;
+  height: 2px;
+  transition: .3s ease-in-out;
+}
+
+
+.resualts_box1:hover{
+  background: #52b947;
+  color: white;
+  transform: translateY(-20px);
+  border-radius: 5px;
+}
+
+.resualts_box1:hover h1{
+  color: white;
+}
+
+.resualts_box1:hover hr{
+  background-color: white;
+}

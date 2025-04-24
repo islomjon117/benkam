@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.contact_inputs_boxs {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.inputs_left {
+  width: 45%;  
+}
+
+.inputs_right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_inputs_box1 {
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+}
+
+.contact_inputs_box1 select,
+.contact_inputs_box1 input {
+  width: 200px;
+  padding-left: 15px;
+  height: 50px;
+  outline: none;
+  border: 1px solid #52b947;
+}
+
+.inputs_right textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  border: 1px solid #52b947;
+}
+
+.contact_form_button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.contact_form_button button {
+  width: 25%;
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+  background-color: #52b947;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 70px;
+}
+
+.inputs_title {
+  margin-top: 80px;
+}
+
+.inputs_title h1 {
+  font-family: "Outfit", sans-serif;
+  margin-top: 20px;
+  color: #52b947;
+}
+
+.subject_input2 {
+  width: 100% !important;
+}
+
+.inputs_title p{
+  font-family: "Outfit", sans-serif;
+}
+
+
+.submit_btn {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 73px;
+  border: none;
+  background-color: #52b947;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  display: inline-block;
+  transition: color 0.5s ease;
+  text-transform: capitalize;
+  font-family: "Outfit", sans-serif;
+
+}
+
+.submit_btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.submit_btn:hover::before {
+  left: 0;
+}
+
+.submit_btn:hover{
+  color: #52b947;
+}

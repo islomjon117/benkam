@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.servisespg {
+    padding-top: 200px;
+}
+
+.servises_bigbox{
+  margin-top: 100px;
+}
+
+.servisespg_title{
+  text-align: center;
+}
+
+.servisespg_title h1{
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  color: #52b947;
+}
+
+.servisespg_title p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.servises_boxs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -50px;
+  padding-bottom: 50px;
+}
+
+.box_icon {
+  background: #52b947;
+  width: 80px;
+  height: 80px;
+}
+
+.servises_box {
+  border: 2px solid #52b947;
+  border-radius: 4px;
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  transition: .3s ease-in-out;
+  margin-top: 20px;
+}
+
+.servises_boxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box_subtitle{
+  width: 80%;
+  margin-top: 30px;
+}
+
+.box_title{
+  margin-top: 30px;
+  color: #52b947;
+}
+
+.box_subtitle p{
+  font-family: "Roboto", sans-serif;
+}
+
+.servises_box:hover{
+  transform: translateY(-30px);
+}
+
+/* Responsivlik qo‘shamiz */
+@media (max-width: 992px) {
+  .servises_box {
+    flex: 0 0 calc(50% - 20px); /* Tablet: 2 tadan */
+  }
+}
+
+@media (max-width: 576px) {
+  .servises_box {
+    flex: 0 0 100%; /* Telefon: 1 tadan */
+  }
+}

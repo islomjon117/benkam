@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.about_his {
+  background: #1b1b1b;
+  width: 100%;
+  height: 500px;
+  margin-top: 400px;
+}
+
+.about_his_left {
+  width: 600px;
+}
+
+.about_his_left img {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  top: -150px;
+  left: 30px;
+  z-index: 10;
+}
+
+.about_hisBg2 {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  z-index: 10;
+  background: #52b947;
+  margin-top: -180px;
+}
+
+.about_his_right {
+  width: 40%;
+  margin-top: 100px;
+}
+
+.about_his_boxs {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.our_history_titles {
+  color: white;
+  text-transform: capitalize;
+}
+
+.our_history_titles h1 {
+  color: #52b947;
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+.our_history_titles p {
+  font-family: "Manrope", sans-serif;
+}
+
+.about_his_info {
+  color: white;
+  margin-top: 50px;
+}
+
+.mySwiper .swiper-pagination {
+  bottom: -50px;
+  color: #52b947;
+}
+
+.swiper-pagination-bullet {
+  background-color: #52b947;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease, transform 0.5s ease, opacity 0.5s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #52b947;
+  width: 16px;
+  height: 16px;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: #52b947;
+  transform: scale(1.3);
+  opacity: 0.9;
+}
+
+.about_hisBg3 {
+  width: 200px;
+  height: 240px;
+  background: #52b947;
+  position: relative;
+  top: -240px;
+  z-index: 20;
+  margin-left: 370px;
+  text-align: center;
+  padding: 20px;
+}
+
+.about_hisBg3 span {
+  font-size: 74px;
+  color: white;
+}
+
+.about_hisBg3 h3 {
+  font-size: 54px;
+  color: white;
+}
+
+.about_hisBg3 p {
+  margin-top: 10px;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Manrope", sans-serif;
+}

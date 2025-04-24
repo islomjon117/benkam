@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.mySwiper img {
+  width: 90%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.lastproject_title {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.carusels {
+  margin-top: 50px;
+}
+
+.lastproject_title h3 {
+  font-family: "Outfit", sans-serif;
+
+  font-weight: 400;
+  color: #52b947;
+  font-size: 24px;
+}
+
+.lastproject_title h1 {
+  font-size: 44px;
+  margin-top: 15px;
+  font-family: "Outfit", sans-serif;
+  color: #1b1b1b;
+}
+
+.lastproject_title_btn {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  padding: 20px;
+  border: none;
+  background: #52b947;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  display: inline-block;
+  transition: color 0.5s ease;
+  font-family: "Outfit", sans-serif;
+
+}
+
+.lastproject_title_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.lastproject_title_btn:hover::before {
+  left: 0;
+}
+
+.lastproject_title_btn:hover {
+  color: #52b947;
+}
+
+.swiper_btn {
+  width: 90%; /* 🟢 rasm bilan bir xil */
+  height: 70px;
+  margin-top: -10px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: #52b947;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  display: inline-block;
+  transition: color 0.5s ease;
+  text-transform: capitalize;
+  font-family: "Outfit", sans-serif;
+}
+
+.swiper_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.swiper_btn:hover::before {
+  left: 0;
+}
+
+.swiper_btn:hover {
+  color: #52b947;
+}

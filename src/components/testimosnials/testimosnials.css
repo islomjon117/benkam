@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.testimosnials_carusel_info {
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  background: #1b1b1b;
+  border-radius: 10px;
+}
+
+.swiper_carusel_testimosnials {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.testimosnials_title {
+  text-align: center;
+}
+
+.testimosnials_main {
+  margin-top: 130px;
+}
+
+.testimosnials_title h1 {
+  color: #52b947;
+  font-size: 54px;
+  margin-top: 15px;
+}
+
+.testimosnials_carusel_info p {
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  font-family: "Outfit", sans-serif;
+
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.testimosnials_carusel_info h1 {
+  color: #52b947;
+  font-family: "Outfit", sans-serif;
+
+  text-align: center;
+}
+
+.carusel_info {
+  padding-top: 65px;
+}
+
+.testimosnials_img{
+  color: #52b947;
+  font-size: 64px;  
+  text-align: center;
+  position: relative;
+  top: 45px;
+}
+

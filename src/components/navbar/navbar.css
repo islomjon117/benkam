@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.navbar_main {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_buttons_social_media {
+  display: flex;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000; /* Boshqa elementlardan yuqorida turishi uchun */
+}
+
+.nav_logo img {
+  width: 200px;
+}
+
+.logo_and_links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.nav_links {
+  display: flex;
+}
+
+.nav_links a {
+  margin-left: 20px;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  display: flex;
+  transition: 0.3s ease-in-out;
+  font-family: "Outfit", sans-serif;
+}
+
+.nav_buttons_social_media {
+  gap: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.nav_button button {
+  height: 100px;
+  padding: 20px;
+  text-transform: capitalize;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  background-color: #52b947;
+  border: none;
+  color: white;
+}
+.social_media a {
+  margin: 10px;
+  color: white;
+  transition: 0.3s;
+  font-size: 28px !important;
+}
+
+.social_media {
+  display: flex;
+}
+
+.facebook a,
+.twitter a,
+.instagram a {
+  display: flex;
+}
+
+.social_media a:hover {
+  color: #52b947;
+  transform-origin: center;
+  transform: scale(1.1);
+}
+
+.nav_links a:hover {
+  color: #52b947;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav_links a,
+.nav_links span {
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Faqat aktiv linkda yashil chiziq */
+.nav_links .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #33f427;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineGrow 0.4s forwards;
+}
+
+.navbar_links2 {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.nav_links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.lang_social_media_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: end !important;
+  margin-left: 100px;
+}
+
+@keyframes underlineGrow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 102;
+  position: relative;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Mobil uchun nav linklar (sidebar) */
+.nav_links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 60%;
+  background-color: #333;
+  padding-top: 60px;
+  text-align: center;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav_links.open {
+  transform: translateX(0); /* Ochilgan holatda ko‘rinadi */
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav_links {
+    display: flex;
+  }
+  .navbar_links2 {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .social_media {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .social_media a {
+    font-size: 24px;
+  }
+}
+
+/* Desktop uchun */
+@media screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav_links {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    padding-top: 0;
+    transform: none;
+    flex-direction: row; /* Bitta qatorda ko'rsatish */
+    align-items: center; /* Yig'ish uchun */
+  }
+
+  .social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.logo_and_links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  width: 80px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-left: 100px;
+  background-image: none;
+}
+
+.custom-select:hover {
+  border-color: #33f427;
+}
+
+.custom-select:focus {
+  outline: none;
+}
+

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.job{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.jobs_title h1{
+    text-align: center;
+    font-size: 58px;
+    color: #52b947;
+    font-family: "Outfit", sans-serif;
+}
+
+.jobs_title p{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.jobs_filter {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+  }
+  
+  .filter_toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #33f427;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .filter_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+  }
+  
+  .filter_dropdown.show {
+    opacity: 1;
+    max-height: 500px;
+  }
+  
+  .filter_btn {
+    padding: 10px 16px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .filter_btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .filter_btn.active {
+    background-color: #33f427;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .jobs_list_column {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .job_card {
+    padding: 16px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+  }
+  

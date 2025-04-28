@@ -14,9 +14,6 @@ const Header = () => {
         </video>
         <div className="container">
           <div className="header_main">
-            <div className="header_title">
-              <h1>we build trust, we're Xtra factory</h1>
-            </div>
             <div className="header_buttons">
               <button className="contact_btn">{t("header_btn1")}</button>
               <Link

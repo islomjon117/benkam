@@ -196,7 +196,7 @@
 }
 
 /* Responsive CSS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .hamburger {
     display: flex;
   }
@@ -221,7 +221,7 @@
 }
 
 /* Desktop uchun */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hamburger {
     display: none;
   }

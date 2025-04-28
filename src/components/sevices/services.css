@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 .services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -33,7 +32,7 @@
   margin-top: 15px;
   color: #52b947;
   font-family: "Outfit", sans-serif;
-  font-weight:600;
+  font-weight: 600;
 }
 
 .services_boxs {
@@ -111,7 +110,7 @@
   color: #000;
 }
 
-.box_short_info p{
+.box_short_info p {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
 }
@@ -120,4 +119,70 @@
   margin-top: 15px;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
+}
+
+.services_boxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.media_screen {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .services{
+    margin-top: 50px;
+  }
+  .services_boxs {
+    display: none;
+  }
+
+  .media_screen {
+    display: block;
+    position: relative;
+    top: -200px;
+  }
+
+  .services_box {
+    width: 250px;
+    height: 270px;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .services_title h1{
+    font-size: 38px;
+    width: 70%;   
+  }
+
+  .services_title p{
+     text-align: center;
+     width: 90%;
+  }
+
+  .services_title{
+    position: relative;
+    top: -100px;
+  }
+
+}
+
+
+.services_box h2 {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box_short_info p {
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  max-height: 3.6em;
+  overflow: hidden;
 }

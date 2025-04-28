@@ -8,16 +8,11 @@
 
 .footer_logo {
   max-width: 300px;
+  margin-top: 50px;
 }
 
 .footer_logo img {
   width: 100%;
-  margin-top: 50px;
-}
-
-.footer_box1 {
-  flex-direction: column;
-  padding: 10px;
 }
 
 .footer_boxs {
@@ -25,17 +20,7 @@
   justify-content: space-between;
 }
 
-.footer_box2 {
-  width: 20%;
-}
-
-.footer_box1 a {
-  color: white;
-  text-transform: capitalize;
-  font-family: "Outfit", sans-serif;
-}
-
-.footer_box2 {
+.footer_box1, .footer_box2 {
   color: white;
   text-transform: capitalize;
   padding: 10px;
@@ -47,19 +32,34 @@
   gap: 8px;
 }
 
-.footer_box2 p {
-  font-family: "Outfit", sans-serif;
-  margin-top: 15px;
+.footer_box2 {
+  width: 20%; /* Desktopda faqat 20% kenglik */
 }
 
-.footer_box2 h3{
-  font-family: "Outfit", sans-serif;
-  margin-top: 15px;
-}
-
-.footer_box2 a{
+.footer_box1 a, .footer_box2 a {
   color: white;
   font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+
+.footer_box2 p, .footer_box2 h3 {
+  font-family: "Outfit", sans-serif;
+  margin-top: 15px;
+}
+
+.footer_box2 a {
   position: relative;
   top: 10px;
+}
+
+/* Responsiv dizayn */
+@media (max-width: 768px) {
+  .footer_boxs {
+    flex-direction: column; /* Boxlar tagma tag joylashadi */
+    align-items: flex-start; /* Boxlarni chap tomonga joylashtirish */
+  }
+
+  .footer_box2 {
+    width: 100%; /* Mobilda butun kenglikni oladi */
+  }
 }

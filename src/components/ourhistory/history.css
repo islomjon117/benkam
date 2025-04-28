@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
 .history {
   background: #1b1b1b;
   width: 100%;
   height: 500px;
   margin-top: 400px;
+  display: block;
 }
 
 .history_left {
-  width: 600px;
+  width: 50%;
+  float: left; /* Elementlarni yonma-yon joylashtirish uchun float ishlatildi */
+  position: relative;
 }
 
 .history_left img {
@@ -31,38 +32,51 @@
 
 .history_right {
   width: 40%;
-  margin-top: 100px;
+  float: right; /* Elementni o'ngga joylashtirish */
+  position: relative;
 }
 
-.history_boxs {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.historyBg3 {
+  width: 200px;
+  height: 240px;
+  background: #52b947;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.our_history_titles {
+.historyBg3 span {
+  font-size: 74px;
+  color: white;
+}
+
+.historyBg3 h3 {
+  font-size: 54px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+.historyBg3 p {
+  margin-top: 10px;
   color: white;
   text-transform: capitalize;
-}
-
-.our_history_titles h1 {
-  color: #52b947;
-  font-size: 44px;
   font-family: "Outfit", sans-serif;
-
-  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  opacity: 1;
+  position: relative;
+  bottom: 10px;
 }
 
-.our_history_titles p {
-  font-family: "Outfit", sans-serif;
-
-}
-
-.history_info {
-  color: white;
-  margin-top: 50px;
-}
+/* Swiper */
 .mySwiper .swiper-pagination {
   bottom: -50px;
   color: #52b947;
@@ -90,33 +104,56 @@
   opacity: 0.9;
 }
 
-.historyBg3 {
-  width: 200px;
-  height: 240px;
-  background: #52b947;
-  position: relative;
-  top: -240px;
-  z-index: 20;
-  margin-left: 370px;
-  text-align: center;
-  padding: 20px;
-}
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  .historyBg3 {
+    width: 150px;
+    height: 180px;
+    padding: 15px;
+    margin-left: 10px;
+    bottom: 10px;
+    right: 10px;
+  }
 
-.historyBg3 span {
-  font-size: 74px;
-  color: white;
-}
+  .history_left img {
+    height: 400px;
+    top: -120px;
+    left: 10px;
+  }
 
-.historyBg3 h3 {
-  font-size: 54px;
-  color: white;
-  font-family: "Outfit", sans-serif;
+  .history_right {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 
-}
+  .historyBg3 h3 {
+    font-size: 36px;
+  }
 
-.historyBg3 p {
-  margin-top: 10px;
-  color: white;
-  text-transform: capitalize;
-  font-family: "Outfit", sans-serif;
+  .historyBg3 p {
+    font-size: 14px;
+  }
+
+  .history_left {
+    width: 100%;
+  }
+
+  .history_right {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .history_boxs {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .history_left img {
+    height: 350px;
+    top: -100px;
+    left: 0;
+  }
 }

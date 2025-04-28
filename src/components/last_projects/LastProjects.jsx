@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../last_projects/lastprojects.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,6 +18,29 @@ import img4 from "../../assets/lastproject/img5.png";
 import img5 from "../../assets/lastproject/img5.png";
 
 const LastProjects = () => {
+  const [slidesPerView, setSlidesPerView] = useState(3);
+
+  useEffect(() => {
+    const updateSlidesPerView = () => {
+      if (window.innerWidth >= 1024) {
+        setSlidesPerView(3);
+      } else if (window.innerWidth >= 768) {
+        setSlidesPerView(2);
+      } else if (window.innerWidth >= 640) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(1); // Default for very small screens
+      }
+    };
+
+    updateSlidesPerView();
+    window.addEventListener("resize", updateSlidesPerView);
+
+    return () => {
+      window.removeEventListener("resize", updateSlidesPerView);
+    };
+  }, []);
+
   return (
     <>
       <div className="lastproject" id="projects">
@@ -35,19 +58,19 @@ const LastProjects = () => {
 
         <div className="carusels">
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
+            slidesPerView={slidesPerView}
+            spaceBetween={32}
             freeMode={true}
             modules={[FreeMode, Pagination]}
             className="mySwiper"
           >
             <SwiperSlide>
               <img src={img1} alt="" />
-              <button className="swiper_btn">factory is safe & sercure</button>
+              <button className="swiper_btn">factory is safe & secure</button>
             </SwiperSlide>
             <SwiperSlide>
               <img src={img2} alt="swiper_btn" />
-              <button className="swiper_btn">petrochemical indastury</button>
+              <button className="swiper_btn">petrochemical industry</button>
             </SwiperSlide>
             <SwiperSlide>
               <img src={img5} alt="swiper_btn" />
